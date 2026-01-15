@@ -4,37 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simply Chocolate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/styles.css">
 </head>
 <body>
     <!-- #region header -->
-    <header>
-        <nav>
-            <a href="./index.html">
-                SIMPLY CHOCOLATE
+    <header class="page-header">
+        <nav class="page-nav">
+            <a href="./index.html" class="logo-link">
+                <span class="accent-italic">SIMPLY</span> CHOCOLATE
                 <img src="./docs/html_tree.png" height="24" width="24" alt="logo">
             </a>
         
-            <ul>
-                <li>
-                    <a href="#">Home</a>
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <a href="#" class="nav-item-link">Home</a>
                 </li>
-                <li>
-                    <a href="#made">How it’s made?</a>
+                <li class="nav-list-item">
+                    <a href="#made" class="nav-item-link">How it’s made?</a>
                 </li>
-                <li>
-                    <a href="#loved">Chocolate is loved</a>
+                <li class="nav-list-item">
+                    <a href="#loved" class="nav-item-link">Chocolate is loved</a>
                 </li>
             </ul>
         </nav>
 
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank">
+        <ul class="social-list">
+            <li class="social-list-item">
+                <a href="https://www.instagram.com/" target="_blank" class="social-item-link">
                     <img src="" alt="instagram logo" height="24" width="24">
                 </a>
             </li>
-            <li>
-                <a href="https://twitter.com/" target="_blank">
+            <li class="social-list-item">
+                <a href="https://twitter.com/" target="_blank" class="social-item-link">
                     <img src="" alt="twitter logo" height="24" width="24">
                 </a>
             </li>
@@ -44,11 +49,14 @@
     
     <main>
         <!-- #region hero -->
-        <section>
-            <h1>
+        <section class="hero-section">
+            <h1 
+                id="title-general" 
+                class="main-title"
+            >
                 Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
             </h1>
-            <ul>
+            <ul class="hero-actions-list">
                 <li>
                     <button type="button">Buy now</button>
                 </li>
@@ -64,10 +72,10 @@
 
         <!-- #region benefits -->
         <section>
-            <h2>
+            <h2 class="section-title">
                 Our Benefits
             </h2>
-            <ul>
+            <ul class="brown-list">
                 <li>
                     <img src="#" alt="Unsurpassed taste" height="32" width="32">
                     <h3>Unsurpassed taste</h3>
@@ -94,33 +102,33 @@
         <!-- #endregion benefits -->
 
         <!-- #region sensation -->
-        <section>
-            <h2>
-                It all adds up to one exceptional taste sensation 
+        <section class="sensation">
+            <h2 class="section-title">
+                It all adds up to one exceptional <span class="accent">taste</span> sensation 
             </h2>
-            <p>
+            <p class="sensation-description">
                 At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.
             </p>
-            <ul>
-                <li>
+            <ul class="sensation-list">
+                <li class="sensation-list-item">
                     <img src="" alt="Milk chocolate ">
                     <h3>
                         Milk chocolate 
                     </h3>
                 </li>
-                <li>
+                <li class="sensation-list-item">
                     <img src="" alt="Milk">
                     <h3>
                         Milk
                     </h3>
                 </li>
-                <li>
+                <li class="sensation-list-item">
                     <img src="" alt="Nuts">
                     <h3>
                         Nuts
                     </h3>
                 </li>
-                <li>
+                <li class="sensation-list-item">
                     <img src="" alt="Semi - sweet chocolate">
                     <h3>
                         Semi - sweet chocolate
@@ -132,8 +140,8 @@
 
         <!-- #region made -->
         <section id="made">
-            <h2>
-                How it’s made?
+            <h2  class="section-title">
+                How it’s <span class="accent">made?</span>
             </h2>
             <img src="./images/made/how-its-made.jpg" alt="How it’s made?" width="600" height="400">
             <h3>
@@ -161,8 +169,8 @@
 
         <!-- #region feedback -->
         <section id="loved">
-            <h2>
-                Chocolate is loved
+            <h2  class="section-title">
+                <span class="accent">Chocolate</span> is loved
             </h2>
             <ul>
                 <li>
@@ -198,7 +206,7 @@
     <!-- #region footer -->
     <footer>
         <p>
-            Chocolate a delicious cure for a bad day
+            <span class="accent">Chocolate</span> a delicious cure for a bad day
         </p>
         <address>
             <p>

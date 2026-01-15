@@ -1,0 +1,114 @@
+/* font-family: "Montserrat", sans-serif; */
+
+/* common */
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #111;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.accent {
+    color: #FD9222; 
+}
+
+.accent-italic {
+    font-style: italic;
+}
+
+
+
+/* common */
+
+/* #region header */
+
+.page-header {
+    
+}
+
+.page-nav {
+    
+}
+
+.logo-link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+}
+
+.nav-list {
+
+}
+
+.nav-list-item {
+    
+}
+
+.nav-item-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+.nav-item-link:hover,
+.nav-item-link:focus {
+    color: #FD9222;
+}
+
+.social-list {
+
+}
+
+.social-list-item {
+
+}
+.social-item-link {
+
+}
+
+/* #endregion header */
+
+/* #region hero */
+
+.hero-section {
+
+}
+
+.main-title {
+    
+}
+
+.hero-actions-list {
+
+}
+
+/* #endregion hero */
