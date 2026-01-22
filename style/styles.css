@@ -41,6 +41,19 @@ ul {
     margin: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0; 
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
     width: 1166px;
     margin-left: auto;
@@ -140,13 +153,144 @@ ul {
 
 .benefits {
     background-color: #1E1823;
+    padding-top: 50px;
+    padding-bottom: 51px;
     color: #FFFFFF;
 }
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 88px;
+}
+
+.benefits-list-item {
+    width: 308px;
+}
+
+/* sensation */
+
+.sensation {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+.sensation-title {
+    width: 411px;
+    margin: 0 auto 28px auto;
+}
+
+.sensation-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-align: center;
+    width: 486px;
+    margin: 0 auto 50px auto;
+}
+
+.sensation-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+}
+
+.sensation-list-item {
+    border-radius: 15px;
+    padding: 30px 32px 28px 32px;
+    width: calc((100% - (19px * 3)) / 4);
+}
+
+.sensation-list-item:nth-child(3n+2) {
+    background-color: #e2643b;
+}
+
+.sensation-list-item:nth-child(2n+3) {
+    background-color: #24ca0b;
+}
+
+
+
+
+
 
 .page-footer {
     background-color: #1E1823;
     color: #FFFFFF;
     height: 200px;
+}
+
+.sensation-list {
+    
+}
+
+.sensation-list-item {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+.test {
+    background-color: #FD9222;
+    height: 100px;
+    margin: 40px 0;
+}
+
+.test div {
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.test span {
+    background-color: blue;
+}   
+
+
+
+
+
+/* flex */
+
+.flex-container {
+    border: solid 4px black; 
+    column-gap: 24px;
+}
+
+.flex-container li {
+    width: 264px;
+    border: solid 1px brown;
+    padding: 10px;
+}
+
+.flex-first {
+    background-color: #0728fc;
+}
+
+.flex-first h2 {
+    font-size: 40px;
+}
+
+.flex-second {
+    background-color: #ddff03;
+    order: 0;
+}
+
+.flex-third {
+    background-color: #a46e39;
+}
+
+.flex-fourth {
+    background-color: #ff001e;
 }
 
 
