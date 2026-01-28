@@ -2,9 +2,9 @@
 
 /* common */
 
-* {
+/* * {
     box-sizing: border-box; 
-}
+} */
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -231,69 +231,42 @@ ul {
 }
 
 
-
-
-
-
-
-
-
-
-
-.test {
-    background-color: #FD9222;
-    height: 100px;
-    margin: 40px 0;
+.image-container {
+    width: 800px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(19, 30, 236, 0.7)), url("./../images/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
 }
 
-.test div {
-    background-color: red;
-    margin-bottom: 10px;
+.item-link {
+    height: 40px;
+    width: 40px;
+    background-color: #1ef20f;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    fill: #FD9222;
+    stroke: #111;
 }
 
-.test span {
-    background-color: blue;
-}   
-
-
-
-
-
-/* flex */
-
-.flex-container {
-    border: solid 4px black; 
-    column-gap: 24px;
+.item-link:hover,
+.item-link:focus {
+    background-color: #111;
+    fill: #111;
+    stroke: #FD9222;
 }
-
-.flex-container li {
-    width: 264px;
-    border: solid 1px brown;
-    padding: 10px;
-}
-
-.flex-first {
-    background-color: #0728fc;
-}
-
-.flex-first h2 {
-    font-size: 40px;
-}
-
-.flex-second {
-    background-color: #ddff03;
-    order: 0;
-}
-
-.flex-third {
-    background-color: #a46e39;
-}
-
-.flex-fourth {
-    background-color: #ff001e;
-}
-
-
 
 
 
