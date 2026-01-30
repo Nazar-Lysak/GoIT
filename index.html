@@ -16,19 +16,19 @@
         <div class=" container">
             <nav class="page-nav">
                 <a href="./index.html" class="logo-link">
-                    <span class="accent-italic">SIMPLY</span> CHOCOLATE
+                    <span class="accent-italic">SIMPLY</span> &nbsp;CHOCOLATE
                     <img src="./images/icons/logo.svg" height="24" width="24" alt="logo">
                 </a>
             
                 <ul class="nav-list">
                     <li class="nav-list-item">
-                        <a href="#" class="nav-item-link">Home</a>
+                        <a href="#" class="nav-item-link ">Home</a>
                     </li>
                     <li class="nav-list-item">
-                        <a href="#made" class="nav-item-link">How it’s made?</a>
+                        <a href="#made" class="nav-item-link ">How it’s made?</a>
                     </li>
                     <li class="nav-list-item">
-                        <a href="#loved" class="nav-item-link">Chocolate is loved</a>
+                        <a href="#loved" class="nav-item-link active-link">Chocolate is loved</a>
                     </li>
                 </ul>
             </nav>
@@ -36,12 +36,16 @@
             <ul class="social-list">
                 <li class="social-list-item">
                     <a href="https://www.instagram.com/" target="_blank" class="social-item-link">
-                        <img src="./images/icons/instagram.svg" alt="instagram logo" height="24" width="24">
+                        <svg height="24" width="24">
+                            <use href="./images/sprite.svg#icon-instagram"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="social-list-item">
                     <a href="https://twitter.com/" target="_blank" class="social-item-link">
-                        <img src="./images/icons/twitter.svg" alt="twitter logo" height="24" width="24">
+                        <svg height="24" width="24">
+                            <use href="./images/sprite.svg#icon-twitter"></use>
+                        </svg>
                     </a>
                 </li>
             </ul>
@@ -61,14 +65,14 @@
                     Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
                 </h1>
                 <ul class="hero-actions-list">
-                    <li>
-                        <button type="button">Buy now</button>
+                    <li class="hero-actions-item">
+                        <button type="button" class="hero-btn">Buy now</button>
                     </li>
-                    <li>
-                        <a href="#">How it’s made</a>
+                    <li class="hero-actions-item">
+                        <a href="#" class="hero-link">How it's made</a>
                     </li>
                 </ul>
-                <a href="#">scroll down <img src="./images/icons/scroll-down.svg" alt="scroll down"></a>
+                <a href="#" class="scroll-link">scroll down <img src="./images/icons/scroll-down.svg" alt="scroll down" class="scroll-icon"></a>
 
             </div>
         </section>
@@ -122,24 +126,46 @@
                         <h3>
                             Milk chocolate
                         </h3>
+                        <div class="sensation-item-overlay">
+                            <p>
+                                Our milk chocolate is made with the finest cocoa beans and creamy milk, resulting in a smooth and velvety texture that melts in your mouth. Indulge in the perfect balance of sweetness and richness with every bite.
+                            </p>
+                        </div>
                     </li>
                     <li class="sensation-list-item accent-blue">
                         <img src="./images/sensation/milk.png" alt="Milk">
                         <h3>
                             Milk
                         </h3>
+                        <div class="sensation-item-overlay">
+                            <p>
+                                Our milk chocolate is made with the finest cocoa beans and creamy milk, resulting in a smooth and velvety texture that melts in your mouth. Indulge in the perfect balance of sweetness and richness with every bite.
+                            </p>
+                        </div>
                     </li>
                     <li class="sensation-list-item accent-green">
                         <img src="./images/sensation/nut.png" alt="Nuts">
                         <h3>
                             Nuts
                         </h3>
+                        <div class="sensation-item-overlay">
+                            <p>
+                                Our milk chocolate is made with the finest cocoa beans and creamy milk, resulting in a smooth and velvety texture that melts in your mouth. Indulge in the perfect balance of sweetness and richness with every bite.
+                            </p>
+                        </div>
                     </li>
                     <li class="sensation-list-item accent-yellow">
                         <img src="./images/sensation/chocolate-bar.png" alt="Semi - sweet chocolate">
                         <h3>
                             Semi - sweet chocolate
                         </h3>
+                        <div class="sensation-item-overlay">
+                            <p class="overlay-description">
+                                Our milk chocolate is made with the finest cocoa beans and creamy milk, resulting in a smooth and velvety texture that melts in your mouth. Indulge in the perfect balance of sweetness and richness with every bite.
+                                Our milk chocolate is made with the finest cocoa beans and creamy milk, resulting in a smooth and velvety texture that melts in your mouth. Indulge in the perfect balance of sweetness and richness with every bite.
+                                Our milk chocolate is made with the finest cocoa beans and creamy milk, resulting in a smooth and velvety texture that melts in your mouth. Indulge in the perfect balance of sweetness and richness with every bite.
+                            </p>
+                        </div>
                     </li>
                     
                 </ul>
@@ -148,29 +174,29 @@
         <!-- #endregion sensation -->
 
         <!-- #region made -->
-        <section id="made">
+        <section id="made" class="made-section">
             <div class="container">
                 <h2  class="section-title">
                     How it’s <span class="accent">made?</span>
                 </h2>
-                <img src="./images/made/made.jpg" alt="How it’s made?" width="600" height="400">
-                <h3>
+                <img src="./images/made/made.jpg" alt="How it's made?" width="600" height="400" class="made-img">
+                <h3 class="made-subtitle">
                     Try  our chocolates today and discover the perfect balance of flavor
                 </h3>
-                <ul>
-                    <li>
+                <ul class="made-list">
+                    <li class="made-list-item">
                         Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
                     </li>
-                    <li>
+                    <li class="made-list-item">
                         At the same time, prepare a water bath. Melt the butter on it.
                     </li>
-                    <li>
+                    <li class="made-list-item">
                         "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.
                     </li>
-                    <li>
+                    <li class="made-list-item">
                         Heat the mixture over low heat, letting it barely boil.
                     </li>
-                    <li>
+                    <li class="made-list-item">
                         Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.
                     </li>
                 </ul>
@@ -179,35 +205,35 @@
         <!-- #endregion made -->
 
         <!-- #region feedback -->
-        <section id="loved">
+        <section id="loved" class="feedback-section">
             <div class="container">
                 <h2  class="section-title">
                     <span class="accent">Chocolate</span> is loved
                 </h2>
-                <ul>
-                    <li>
-                        <img src="./images/feedback/viktoria.png" alt="Victoria Dobrzhanska">
-                        <h3>Victoria Dobrzhanska</h3>
-                        <p>
+                <ul class="feedback-list">
+                    <li class="feedback-list-item">
+                        <img src="./images/feedback/viktoria.png" alt="Victoria Dobrzhanska" class="feedback-img">
+                        <h3 class="feedback-name">Victoria Dobrzhanska</h3>
+                        <p class="feedback-text">
                             I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.
                         </p>
                     </li>
-                    <li>
-                        <img src="./images/feedback/nazar.png" alt="Nazar Babenko">
-                        <h3>Nazar Babenko</h3>
-                        <p>
+                    <li class="feedback-list-item">
+                        <img src="./images/feedback/nazar.png" alt="Nazar Babenko" class="feedback-img">
+                        <h3 class="feedback-name">Nazar Babenko</h3>
+                        <p class="feedback-text">
                             This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.
                         </p>
                     </li>
-                    <li>
-                        <img src="./images/feedback/olena.png" alt="Olena Kampusch">
-                        <h3>Olena Kampusch</h3>
-                        <p>
+                    <li class="feedback-list-item">
+                        <img src="./images/feedback/olena.png" alt="Olena Kampusch" class="feedback-img">
+                        <h3 class="feedback-name">Olena Kampusch</h3>
+                        <p class="feedback-text">
                             Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.
                         </p>
                     </li>
                 </ul>
-                <button type="button">
+                <button type="button" class="feedback-btn">
                     Leave  a review
                 </button>
             </div>
@@ -218,38 +244,38 @@
     <!-- #region footer -->
     <footer class="page-footer">
         <div class="container">
-            <p>
+            <p class="footer-slogan">
                 <span class="accent">Chocolate</span> a delicious cure for a bad day
             </p>
-            <address>
-                <p>
+            <address class="footer-address">
+                <p class="footer-address-title">
                     Contact us
                 </p>
-                <ul>
-                    <li>
-                        <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+                <ul class="footer-contacts-list">
+                    <li class="footer-contacts-item">
+                        <a href="tel:+380684439426" class="footer-contact-link">+380 (68) 443-94-26</a>
                     </li>
-                    <li>
-                        <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+                    <li class="footer-contacts-item">
+                        <a href="mailto:simplychoc@gmail.com" class="footer-contact-link">simplychoc@gmail.com</a>
                     </li>
                 </ul>
             </address>
-            <hr>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
+            <hr class="footer-divider">
+            <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-link">Home</a>
                 </li>
-                <li>
-                    <a href="#">How it’s made?</a>
+                <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-link">How it's made?</a>
                 </li>
-                <li>
-                    <a href="#">Chocolate is loved</a>
+                <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-link">Chocolate is loved</a>
                 </li>
             </ul>
 
-            <form>
-                <input type="email">
-                <button type="submit">Subscribe</button>
+            <form class="footer-form">
+                <input type="email" class="footer-input">
+                <button type="submit" class="footer-submit-btn">Subscribe</button>
             </form>
         </div>
         
