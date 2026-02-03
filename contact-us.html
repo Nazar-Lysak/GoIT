@@ -7,22 +7,99 @@
     <link rel="stylesheet" href="./style/styles.css">
 </head>
 <body>
-    <h1>Contact us page</h1>
+    <h1 class="main-title">Contact us page</h1>
 
-    <!-- <div class="position-container">
-        <div class="position-inner">
-            <div class="box red">1</div>
-            <div class="box yellow">2</div>
-            <div class="box green">3</div>
+    <form class="main-form">
+        <label for="user-name">Username <span class="mark">*</span></label>
+        <input 
+            type="text" 
+            id="user-name" 
+            placeholder="Serhii Stepanenko" 
+            name="user-name"
+            required
+        >             
+        
+        <label for="user-email">Email <span class="mark">*</span></label>
+        <input 
+            type="email" 
+            id="user-email" 
+            placeholder="serhii.stepanenko@example.com" 
+            name="user-email"
+            required
+        >
+
+        <label for="user-phone">Phone Number <span class="mark">*</span></label>
+        <input 
+            type="tel" 
+            id="user-phone" 
+            placeholder="+1 234 567 8901" 
+            name="user-phone"
+            required
+        >
+
+        <p class="form-title">Pizza Size</p>
+
+        <label>Small
+            <input type="radio" name="size" value="small" class="check-btn">
+        </label>
+
+        <label>Medium
+            <input type="radio"  name="size" value="medium" class="check-btn" checked>
+        </label>
+
+        <label>Large
+            <input type="radio" name="size" value="large" class="check-btn">
+        </label>
+
+        <p class="form-title">Pizza options</p>
+
+        <label>Extra cheese
+            <input type="checkbox" name="options" value="cheese" class="check-btn">           
+        </label>
+
+        <label>Pepperoni
+            <input type="checkbox" name="options" value="pepperoni" class="check-btn">           
+        </label>
+
+        <label>Mushrooms
+            <input type="checkbox" name="options" value="mushrooms" class="check-btn" disabled>           
+        </label>
+
+        <label for="user-comments">Comments</label>
+        <textarea id="user-comments" name="user-comments" placeholder="please leave your comment here" maxlength="10"></textarea>
+
+
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        
+        <div class="button-wrapper">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
         </div>
-    </div> -->
+    </form>
 
-
-    <!-- transition -->
-
-    <!-- <button class="submit-btn" type="button">
-        click me
-    </button> -->
+    <p>
+        ?user-name=NAME
+        &
+        user-email=test%40test.com
+        &
+        user-phone=12321223
+        &
+        size=small
+        &
+        options=cheese
+        &
+        options=pepperoni
+        &
+        user-comments=Here+is+my
+        &
+        cars=audi
+    </p>
 
 
 </body>

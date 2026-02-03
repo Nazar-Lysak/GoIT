@@ -1,49 +1,73 @@
-# 📘 Модуль 4.2: Декоративні елементи
+# 👩‍🏫 Заняття 9: Форми і таблиці
 
-## 📍 Позиціонування
-
-- `position`: `static` | `relative` | `absolute` | `fixed` | `sticky`  
-- `z-index`
-
----
-
-## 🎬 CSS-переходи
-
-- `transition-property`: `<властивість>` | `color`, `background-color`  
-- `transition-duration`: `<час>` | `2s` | `0.5s` | `2000ms` | `500ms`  
-- `transition-timing-function`: `<функція розподілу часу>` | `ease`, `linear`, `ease-in`, `ease-out`, `ease-in-out`  
-- `transition-delay`: `<затримка>`
-
-- `transition`: `[property] [duration] [timing-function] [delay]`  
-- `transition`: `background-color 500ms linear, transform 500ms ease-in-out;`
-
-### Властивість `transition-timing-function`
-
-- `ease` — перехід починається повільно, швидко прискорюється, а потім знову сповільнюється в кінці.  
-- `linear` — перехід має рівномірну швидкість.  
-- `ease-in` — починається повільно, швидкість переходу збільшується до повного завершення переходу.  
-- `ease-out` — починається швидко, уповільнюється протягом переходу.  
-- `ease-in-out` — починається повільно, прискорюється, а потім знову сповільнюється.
+## 🎯 Ціль заняття
+- Ознайомитись з основними HTML-тегами для створення форм
+- Розібрати атрибути форм та їх поведінку
+- Навчитись працювати з валідацією та псевдокласами
+- Продовжити роботу над проєктом, додавши форми
 
 ---
 
-## 🌀 2D-трансформації
-
-- `transform`: `none` | `<тип трансформації>` `<тип трансформації>` ...  
-- `transform: scale(1.15)` — маштабування  
-- `transform: rotate(45deg)` — прокручування  
-- `transform: translate(100px, 200px)` — зміщення  
-- `transform: translate(-50%, -50%)` — центрування елемента  
-- `transform: skew(30deg)` — викривлення
+## 📌 1. Вступ
+**Що розглянемо:**
+- Теги `form`, `label`, `input`, `textarea`, `select`, `fieldset`, `optgroup`, `datalist`
+- Атрибути: `type`, `name`, `placeholder`, `checked`, `required`, `disabled`, `autofocus`, `minLength`, `maxLength`, `step`, `value`, `min`, `max`
+- Псевдокласи: `:focus-within`, `:placeholder-shown`, `:checked`
+- Стилизування `textarea` — властивість `resize`
 
 ---
 
-## 🧙‍♀️ Псевдоелементи
-
-Використання:  
-`.box::before`, `.box::after`, `.box:hover::before`
+## 🙋‍♂️ 2. Відповіді на питання студентів
+(з файлу питань — буде заповнюватись на уроці)
 
 ---
 
+## 🧩 3. Продовження проєкта
+
+### 📄 Базові теги форм:
+| Тег       | Призначення |
+|-----------|-------------|
+| `<form>`        | Контейнер для форми |
+| `<label>`       | Підпис до елемента форми |
+| `<input>`       | Поле вводу (вказується тип через `type`) |
+| `<textarea>`    | Багаторядкове текстове поле |
+| `<select>`      | Випадаючий список |
+| `<optgroup>`    | Група опцій у `<select>` |
+| `<datalist>`    | Варіанти підказок до `<input>` |
+| `<fieldset>`    | Групування пов’язаних елементів форми |
+
+---
+
+### ⚙️ Важливі атрибути `input`:
+| Атрибут       | Пояснення |
+|---------------|-----------|
+| `type`        | Тип поля (див. нижче) |
+| `name`        | Ім’я поля (важливо для обробки даних) |
+| `placeholder` | Підказка у полі |
+| `checked`     | Встановлює обране значення (для `checkbox`, `radio`) |
+| `required`    | Поле обов’язкове для заповнення |
+| `disabled`    | Поле вимкнене |
+| `autofocus`   | Фокус при завантаженні сторінки |
+| `min`, `max`, `step`, `value` | Для числових полів |
+| `minLength`, `maxLength` | Для текстових/парольних полів |
+
+---
+
+### ⌨️ Типи `input`:
+```html
+<input type="text">
+<input type="email">
+<input type="checkbox" checked>
+<input type="radio" name="choice">
+<input type="number" value="0" min="18" max="120" step="0.5">
+<input type="date">
+<input type="time">
+<input type="datetime-local">
+<input type="tel">
+<input type="password" minLength="6" maxLength="20">
+```
 ## 🔹 Додаткові ресурси 📚
-- 🖼 [cubic-bezier](https://cubic-bezier.com/#.17,.67,.83,.67) – сервіс генератор анімації   
+- 🖼 [dashly-theme](https://dashly-theme.com/account.html) – приклад використання форм  
+- 🖼 [ant.design](https://ant.design/components/overview/) – одна з популярних js бібліотек з різними компонентами  
+
+
