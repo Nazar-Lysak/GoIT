@@ -281,5 +281,80 @@
         
     </footer>
     <!-- #endregion footer -->
+
+    <!-- #region popup -->
+
+    <div class="backdrop">
+        <!-- hide-popup -->
+        <div class="popup-review">
+            <button class="close-popup">
+                <svg height="28" width="28">
+                    <use href="./images/sprite.svg#icon-x-close"></use>
+                </svg>
+            </button>
+            <p class="leave-review-description">Leave a review about <span class="accent">our chocolate</span></p>
+            <form>
+                <div class="field-wrapper">
+
+                    <label class="label-field" for="user-name">Name</label>
+
+                    <div class="field-wrapper-inner">
+                        <input class="text-field" type="text" id="user-name" name="user-name" required>
+                        <svg class="form-icon" height="24" width="24">
+                            <use href="./images/sprite.svg#icon-user"></use>
+                        </svg>                       
+                    </div>
+                    
+                </div>
+                <div class="field-wrapper">
+                    <label class="label-field" for="user-email">Email</label>
+
+                    <div class="field-wrapper-inner">
+                        <input class="text-field" type="email" id="user-email" name="user-email" required>
+                        <svg class="form-icon" height="24" width="24">
+                            <use href="./images/sprite.svg#icon-mail"></use>
+                        </svg>
+                    </div>
+
+                    
+                </div>
+                <div class="field-wrapper">
+                    <label class="label-field" for="user-phone">Phone number</label>
+
+                    <div class="field-wrapper-inner">
+                        <input class="text-field" type="tel" id="user-phone" name="user-phone">
+
+                        <svg class="form-icon" height="24" width="24">
+                            <use href="./images/sprite.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                    
+                </div>
+                <div class="field-wrapper">
+                    <label class="label-field" for="user-comment">Comment</label>
+                    <textarea class="comment-field" name="user-comment" id="user-comment" placeholder="Enter text" required></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="user-terms" name="user-terms" value="true" required class="input-checkbox visually-hidden">
+                    <label for="user-terms" class="terms-label">
+                        <span class="custom-checkbox">
+                                <svg height="10" width="10" class="check-icon">
+                                    <use href="./images/sprite.svg#icon-check"></use>
+                                </svg>
+                        </span>
+                        I accept the terms and conditions of the <a href="#" class="accent privacy-link">Privacy Policy</a>
+                    </label>                    
+                </div>
+
+                <button type="submit" class="form-submit-btn">Send</button>
+            </form>
+        </div>       
+    </div>
+
+
+    <!-- #endregion popup -->
 </body>
 </html>
+
+
+
