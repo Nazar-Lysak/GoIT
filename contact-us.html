@@ -1,71 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/page.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>
-        Responsive design
-    </h1>
-    <!-- <div class="wrapper">
-        <div class="block elem-1">width: 600px;</div>
-        <div class="block elem-2">max-width: 800px;</div>
-        <div class="block elem-3">max-width: 1000px; min-width: 500px;</div>
-        <div class="block elem-4">width: 100% (default)</div>
-        <div class="block elem-5">width: auto (default)</div>
-    </div> -->
-
-    <section class="section-1">
-        <div class="container">
-            <h2>
-                Title
-            </h2>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <h3>Strategy</h3>
-                    <p>
-                        Our goal is to identify the business problem to walk away with the perfect and creative solution.
-                    </p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h3>Punctuality</h3>
-                    <p>
-                        Bring the key message to the brand's audience for the best price within the shortest possible time.
-                    </p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h3>Diligence</h3>
-                    <p>
-                        Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
-                    </p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h3>Technologies</h3>
-                    <p>
-                        Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="section-2">
-        <h2>
-            test
-        </h2>
-        
-    </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./page.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            Responsive design
+        </h1>
+        <!-- bg-image -->
+        <!-- <div class="media">
+            <h1>Main title</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis quasi iusto reiciendis rerum voluptates quia hic obcaecati nihil necessitatibus quibusdam perspiciatis repudiandae corrupti, adipisci eligendi! Necessitatibus commodi voluptatem facere numquam.</p>
+            </div> -->
+        <img 
+            src="./images-lesson/hero.jpg"
+            alt="chocolate"           
+            srcset="./images-lesson/hero@2x.jpg 2x"              
+            class="main-image"
+            width="460"
+            height="320"
+        >
+        <!-- image -->
 
 
-</body>
+        <picture>
+            <img src="" alt="">
+            <source 
+                media="(min-width: 1158px)"
+                srcset="./images-lesson/hero.jpg 1x, ./images-lesson/hero@2x.jpg 2x"
+            >
 
+            <source
+                media="(min-width: 768px)"
+                srcset="./images-lesson/hero-t.jpg 1x, ./images-lesson/hero-t@2x.jpg 2x"
+            >
+
+            <source
+                media="(max-width: 767px)"
+                srcset="./images-lesson/hero-m.jpg 1x, ./images-lesson/hero-m@2x.jpg 2x"
+            >
+
+            <img 
+                src="./images-lesson/hero-m.jpg" 
+                alt="chocolate" 
+                class="main-image"
+                height="400"
+                width="600"
+            >
+        </picture>
+
+
+
+
+
+
+
+
+        <!-- picture -->
+        <!-- <picture>
+            <source 
+                media="(min-width: 1158px)" 
+                srcset="./images-lesson/hero.jpg 1x, ./images-lesson/hero@2x.jpg 2x"
+            >
+            
+            <source 
+                media="(min-width: 768px)" 
+                srcset="./images-lesson/hero-t.jpg 1x, ./images-lesson/hero-t@2x.jpg 2x"
+            >
+            
+            <source 
+                media="(max-width: 767px)" 
+                srcset="./images-lesson/hero-m.jpg 1x, ./images-lesson/hero-m@2x.jpg 2x"
+            >
+            
+            <img src="./wellcome-popup-mob.jpg" alt="" class="picture-image">
+            </picture> -->
+    </body>
 </html>

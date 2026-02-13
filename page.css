@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.media {
+    max-width: 320px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+        url("./images-lesson/hero-m.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    padding: 40px 20px;
+}
+
+
+
+
+@media screen and (min-resolution: 192dpi) {
+    .media {
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+        url("./images-lesson/hero-m@2x.jpg");
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    .media {
+        max-width: 704px;
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+        url("./images-lesson/hero-t.jpg");
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .media {
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+        url("./images-lesson/hero-t@2x.jpg");
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .media {
+        max-width: 1024px;
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+        url("./images-lesson/hero.jpg");
+    }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .media {
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+            url("./images-lesson/hero@2x.jpg");
+    }
+}
+
+
+
+.main-image {
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+
+
+
+
+
